@@ -1,75 +1,86 @@
-# Nuxt Minimal Starter
+# BrandTech Shop - Task Assignment
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+**BrandTech Shop** project! This repository contains a fictional online shopping platform built as part of a task assignment. 
 
-## Setup
+The platform showcases products, allows users to filter, view product details, manage a shopping cart, and proceed to checkout.
 
-Make sure to install dependencies:
+---
 
-```bash
-# npm
-npm install
+## Features
+- **Brand Filtering**: Filter products by brand.
+- **Product Listings**: Displays all products with promotional items.
+- **Category Filtering**: Browse products based on categories.
+- **Product Details Page**: View detailed product information, including variants and stock levels.
+- **Shopping Cart**: Add products to a cart, view cart details, and proceed to checkout.
+- **Dynamic Components**: Uses sliders for product images and menus for categories.
 
-# pnpm
-pnpm install
+---
 
-# yarn
-yarn install
+## Technologies Used
 
-# bun
-bun install
-```
+The project leverages modern front-end technologies:
 
-## Development Server
+1. **Vue 3**: Core JavaScript framework for building the UI.
+2. **Nuxt 3**: Framework for server-side rendering and static site generation.
+3. **Pinia**: State management for efficient handling of data.
+4. **Other Plugins**: 
+   - FontAwesome for icons.
+   - Bootstrap for styling and responsive design.
 
-Start the development server on `http://localhost:3000`:
+---
 
-```bash
-# npm
-npm run dev
+## Installation and Setup
 
-# pnpm
-pnpm dev
+Follow these steps to clone and run the project:
 
-# yarn
-yarn dev
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
 
-# bun
-bun run dev
-```
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Production
+3. **Run the Development Server**:
+   ```bash
+   npm run dev
+   ```
 
-Build the application for production:
+4. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-```bash
-# npm
-npm run build
+---
 
-# pnpm
-pnpm build
+## Project Structure
 
-# yarn
-yarn build
+- **`components/`**: Contains reusable Vue components like `ProductList`.
+- **`pages/`**: Nuxt pages for routing (`index.vue`, `product/[id].vue`,`brand/index.vue`,`brand/[name].vue`).
+- **`stores/`**: Pinia stores for managing state (`productStore`, `shopStore`).
+- **`assets/`**: Static assets like images,language, and data.
 
-# bun
-bun run build
-```
+---
 
-Locally preview production build:
+## Usage
 
-```bash
-# npm
-npm run preview
+1. **Browse Products**: View all products and promotional items on the homepage.
+2. **Filter by Category or Brand**: Use the sidebar or menu to filter products.
+3. **View Product Details**: Click on a product to see its detailed information, variants, and stock (`product with id 3, give better overview of variants`).
+4. **Manage Cart**: Add products to the cart.
 
-# pnpm
-pnpm preview
+---
 
-# yarn
-yarn preview
+## Contributions
 
-# bun
-bun run preview
-```
+This project is a task assignment.
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+---
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+Happy Coding! 😊
