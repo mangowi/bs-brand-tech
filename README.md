@@ -13,7 +13,7 @@ The platform showcases products, allows users to filter, view product details, m
 - **Product Details Page**: View detailed product information, including variants and stock levels.
 - **Shopping Cart**: Add products to a cart, view cart details, and proceed to checkout.
 - **Dynamic Components**: Uses sliders for product images and menus for categories.
-
+- **Dynamic Local Languages**: Toggle language between Danish or English.
 ---
 
 ## Technologies Used
@@ -71,6 +71,10 @@ Follow these steps to clone and run the project:
 
 ---
 
+## Live on Vercel - [Brand-Tech](http://bs-brand.tech.vercel.app)
+![image](https://github.com/user-attachments/assets/bf0e9e52-95e0-4796-8172-19abda19ca46)
+
+---
 ## Contributions
 
 This project is a task assignment.
