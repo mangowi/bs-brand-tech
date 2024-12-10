@@ -69,6 +69,22 @@ import Slider from './Slider.vue';
 
 export default defineComponent({
   name: 'ProductList',
+  head() {
+    return {
+      title: 'Product List - Brand Tech',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Brand Tech products'
+        },
+        {
+          name: 'keywords',
+          content: 'best-seller, vue 3, nuxt 3'
+        }
+      ]
+    };
+  },
   components: {
     Slider,
   },

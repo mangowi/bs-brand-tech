@@ -113,6 +113,71 @@
                           "dk": "Alle Kategori(er)",
                           "en": "All Categories"
                         }
+                      },
+                      {
+                        "Text.AddToCart":{
+                          "dk":"Tilføj til kurv",
+                          "en":"Add to Cart"
+                        }
+                      }
+                      ,
+                      {
+                        "Text.NotFound":{
+                          "dk":"Ikke fundet",
+                          "en":"Not Found"
+                        }
+                      }
+                      ,
+                      {
+                        "Text.Stock":{
+                          "dk":"Lager antal",
+                          "en":"Stock"
+                        }
+                      },
+                      {
+                        "Text.OutOfStock":{
+                          "dk":"Udsolgt",
+                          "en":"Out of stock"
+                        }
+                      },
+                      {
+                        "Text.Variants":{
+                          "dk":"Varianter",
+                          "en":"Variants"
+                        }
+                      },
+                      {
+                        "Text.AvailableSizes":{
+                          "dk":"Tilgængelige størrelser",
+                          "en":"Available sizes"
+                        }
+                      },
+                      {
+                        "Text.Sizes":{
+                          "dk":"Størrelser",
+                          "en":"Sizes"
+                        }
+                      }
+                      ,
+                      {
+                        "Text.Color":{
+                          "dk":"Farve",
+                          "en":"Color"
+                        }
+                      }
+                      ,
+                      {
+                        "Text.ContinueToCheckout":{
+                          "dk":"Fortsæt til betaling",
+                          "en":"Continue to checkout"
+                        }
+                      }
+                      ,
+                      {
+                        "Text.YourCartIsEmpty":{
+                          "dk":"Din kurv er tom",
+                          "en":"Your cart is empy"
+                        }
                       }
         ]
 }

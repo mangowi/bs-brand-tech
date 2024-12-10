@@ -7,8 +7,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 // Adding icons to the library
 library.add(faUser, faHome, faGithub,faArrowLeft, faArrowRight, faCartPlus, faShoppingCart)
-console.log('Font Awesome Library:', library)
-
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon)
 })

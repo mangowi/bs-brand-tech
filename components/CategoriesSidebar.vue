@@ -2,6 +2,7 @@
 import { computed, ref } from "vue";
 import { useProductStore } from "~/stores/productStore";
 import { useShopStore } from "~/stores/shopStore";
+import { useRoute } from 'vue-router';
 
 export default defineComponent({
   name: "CategoriesSidebar",
@@ -14,6 +15,8 @@ export default defineComponent({
   },
   emits: ["categorySelected"],
   setup({ emit }) {
+    const route = useRoute();
+
     // Store Access
     const shopStore = useShopStore();
     const productStore = useProductStore();
@@ -30,19 +33,28 @@ export default defineComponent({
 
     // Toggle visibility for categories
     const toggleCategory = (category: any, hasSubcategories: boolean) => {
-      if (hasSubcategories) {
-        let id = category.id;
-
-        if (openCategories.value.includes(id)) {
-          openCategories.value = openCategories.value.filter((openId) => openId !== id);
+      try {
+        if(category == null) return;  
+        if (hasSubcategories) {
+          let id = category.id;
+          if (!id) {
+            console.warn("Invalid category ID");
+            return;
+          }
+          if (openCategories.value.includes(id)) {
+            openCategories.value = openCategories.value.filter((openId) => openId !== id);
+          } else {
+            openCategories.value.push(id);
+          }
         } else {
-          openCategories.value.push(id);
-        }
-      } else {
-        productStore.setSelectedCategory(category);
-        emit("categorySelected", category);
+          productStore.setSelectedCategory(category);
+          emit("categorySelected", category);
 
+        }
+      } catch (error) {
+       
       }
+     
     };
 
     // Flat categories for better rendering
@@ -60,8 +72,10 @@ export default defineComponent({
       
     // Emit event on category selection
     const selectCategory = (category: any) => {
-      productStore.setSelectedCategory(category); // Sync category in store
-      emit("categorySelected", category);
+      if(category != null){
+        productStore.setSelectedCategory(category); // Sync category in store
+        emit("categorySelected", category);
+      }
     };
 
     const isSidebarOpen = ref(false); // Sidebar visibility state
@@ -72,6 +86,13 @@ export default defineComponent({
       const getItemLanguage = (text: string) => {
           return shopStore.getLanguageText(text);
         };
+
+    // Check if the current route matches "product/:id"
+    const isProductDetailPage = computed(() => {
+      const pathMatch = route.path.match(/^\/product\/\d+$/);
+      return Boolean(pathMatch);
+    });
+   
     return {
       toggleCategory,
       selectCategory,
@@ -82,7 +103,8 @@ export default defineComponent({
       categories,
       language,
       selectedCategory,
-      getItemLanguage
+      getItemLanguage,
+      isProductDetailPage
     };
   },
 });
@@ -90,8 +112,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="categories-sidebar">
-   <!-- Ribbon for toggling the sidebar -->
+  <div class="categories-sidebar" v-if="!isProductDetailPage">
+   <!-- Gay Ribbon for toggling the sidebar -->
    <div class="ribbon" @click="toggleSidebar">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +146,7 @@ export default defineComponent({
         ]"
       >
         <!-- Category Header -->
-        <div class="category-header" @click="toggleCategory(category, category.categories && category.categories.length > 0)">
+        <div class="category-header" @click="toggleCategory(category,category!= null && category.categories && category.categories.length > 0)">
           <span class="category-title"
           :class="{
             'is-active': selectedCategory?.id === category.id,

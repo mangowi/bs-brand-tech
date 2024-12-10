@@ -59,7 +59,9 @@ export const useProductStore = defineStore('productStore', {
       this.products = [...this.originalProducts]; // Reset products to original
       this.promotionalSpots = [...this.originalPromotionalSpots]; // Reset promotions to original
       this.filteredProducts = [...this.originalProducts]; // Reset filtered products to original
-    
+      if(resetCategory){
+        this.selectedCategory = null;
+      }
     },
     setSelectedCategory(category) {
       this.selectedCategory = category;
