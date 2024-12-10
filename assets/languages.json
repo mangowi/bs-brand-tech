@@ -1,0 +1,118 @@
+{
+        "languageTexts":[
+                        {
+                                "Text.All":{
+                                        "dk":"Alle",
+                                        "en":"All"
+                                }
+                        },
+                        {
+                                "Text.Search":{
+                                        "dk":"Søg",
+                                        "en":"Search"
+                                }
+                        },
+                        {
+                                "Text.Shop":{
+                                        "dk":"Butik",
+                                        "en":"Shop"
+                                }
+                        },
+                        {
+                        "Text.CustomerService": {
+                          "dk": "Kundeservice",
+                          "en": "Customer Service"
+                        }
+                      },
+                      {
+                        "Text.ContactUs": {
+                          "dk": "Kontakt os",
+                          "en": "Contact Us"
+                        }
+                      },
+                      {
+                        "Text.Shipping": {
+                          "dk": "Forsendelse",
+                          "en": "Shipping"
+                        }
+                      },
+                      {
+                        "Text.Returns": {
+                          "dk": "Returnering",
+                          "en": "Returns"
+                        }
+                      },
+                      {
+                        "Text.FAQs": {
+                          "dk": "Ofte stillede spørgsmål",
+                          "en": "FAQs"
+                        }
+                      },
+                      {
+                        "Text.About": {
+                          "dk": "Om",
+                          "en": "About"
+                        }
+                      },
+                      {
+                        "Text.OurStory": {
+                          "dk": "Vores historie",
+                          "en": "Our Story"
+                        }
+                      },
+                      {
+                        "Text.Careers": {
+                          "dk": "Karriere",
+                          "en": "Careers"
+                        }
+                      },
+                      {
+                        "Text.Sustainability": {
+                          "dk": "Bæredygtighed",
+                          "en": "Sustainability"
+                        }
+                      },
+                      {
+                        "Text.Newsletter": {
+                          "dk": "Nyhedsbrev",
+                          "en": "Newsletter"
+                        }
+                      },
+                      {
+                        "Text.SignUpForOffers": {
+                          "dk": "Tilmeld dig for eksklusive tilbud, opdateringer og mere.",
+                          "en": "Sign up for exclusive offers, updates, and more."
+                        }
+                      },
+                      {
+                        "Text.EnterYourEmail": {
+                          "dk": "Indtast din e-mail",
+                          "en": "Enter your email"
+                        }
+                      },
+                      {
+                        "Text.Subscribe": {
+                          "dk": "Abonner",
+                          "en": "Subscribe"
+                        }
+                      },
+                      {
+                        "Text.AllRightsReserved": {
+                          "dk": "Alle rettigheder forbeholdt",
+                          "en": "All rights reserved"
+                        }
+                      },
+                      {
+                        "Text.Categories": {
+                          "dk": "Rod Kategori(er)",
+                          "en": "Root Categories"
+                        }
+                      },
+                      {
+                        "Text.AllCategories": {
+                          "dk": "Alle Kategori(er)",
+                          "en": "All Categories"
+                        }
+                      }
+        ]
+}
