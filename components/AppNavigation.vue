@@ -164,6 +164,9 @@ export default defineComponent({
     const toggleCartDropdown = () => {
       showCartDropdown.value = !showCartDropdown.value;
     };
+    const proceedToCheckout = () => {
+      showCartDropdown.value = false;
+    };
     return {
       searchQuery,
       onSearch,
@@ -180,7 +183,8 @@ export default defineComponent({
       showCartDropdown,
       toggleCartDropdown,
       priceFormat,
-      getProductName
+      getProductName,
+      proceedToCheckout
 
     };
   }, 

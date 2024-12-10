@@ -309,7 +309,8 @@ export default defineComponent({
   font-size: 0.9rem;
 }
 .subcategory-link.is-active, .category-title.is-active {
-  text-decoration: line-through;
+    color: #007bff !important;
+    text-decoration: underline !important;
 }
 
 @media screen and (max-width: 480px) {
